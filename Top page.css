@@ -1,0 +1,393 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/*
+header {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+}
+*/
+
+.top {
+  position: relative;
+}
+
+.top p {
+  position: absolute;
+  color: blue;
+  font-weight: bold;
+  font-size: 4em;
+  opacity: 0.8;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.about-us p {
+  position: absolute;
+  color: white;
+  font-weight: lighter;
+  font-size: 1.3em;
+  opacity: 0.7;
+  top: 65%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  text-wrap: initial;
+  width: 80%;
+}
+
+.top img {
+  width: 100%;
+  height: 400px;
+}
+
+.language-switcher1 a {
+  color: whitesmoke;
+  font-size: 18px;
+  position: absolute;
+  top: 90%;
+  left: 40%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.language-switcher2 a {
+  color: whitesmoke;
+  font-size: 18px;
+  position: absolute;
+  top: 90%;
+  left: 60%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.news-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*
+.news-section h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 2px solid #0078d7;
+  padding-bottom: 10px;
+}
+*/
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.news-list li:last-child {
+  border-bottom: none;
+}
+
+.news-list .date {
+  color: #666;
+  font-size: 1.0em;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+/*
+.news-list a {
+  color: #0078d7;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.news-list a:hover {
+  text-decoration: underline;
+}
+
+#top-message {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#top-message p {
+  font-size: 16px;
+  margin: 0;
+  padding-bottom: 5px;
+  padding-left: 30px;
+}
+*/
+
+h2 {
+  font-size: 20px;
+  font-style: italic;
+  padding-left: 10px;
+  color: #555;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  /* 横並び＋折り返し */
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.detail-box {
+  flex: 1 1 300px;
+  /* 最小幅300pxでレスポンシブ対応 */
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.detail-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.detail-box p {
+  margin: 5px 0;
+  color: snow;
+}
+
+.ski-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.ski-card {
+  background: rgba(163, 163, 243, 0.322);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  text-align: center;
+  transform: 0.2s;
+}
+
+.ski-card:hover {
+  transform: scale(1.03);
+}
+
+.ski-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.ski-card p {
+  color: blue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  margin-bottom: 15px;
+}
+
+.ski-card {
+  position: relative;
+}
+
+.ski-card a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.ski-card a:hover {
+  opacity: 0.1;
+  background: #0056b3;
+}
+
+.access_stay {
+  display: block;
+  background-color: whitesmoke;
+  box-shadow: 0 0 8px gray;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.map_and_access {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.item img {
+  max-width: 365px;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.map_and_access ul {
+  padding-left: 0;
+}
+
+.map_and_access li {
+  padding-left: 0;
+  margin-bottom: 7px;
+  list-style: none;
+}
+
+.Stay {
+  display: flex;
+  border: double 4px gray;
+  margin-top: 10px;
+}
+
+.Stay li {
+  font-size: small;
+  list-style: none;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #007bff;
+  color: #fff;
+  margin-top: 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .top p {
+    font-size: 2em;
+    /* 見出しを縮小 */
+  }
+
+  .about-us p {
+    font-size: 0.4em;
+    width: 90%;
+  }
+
+  .top img {
+    height: auto;
+  }
+
+  .news-section {
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 0;
+
+  .news-list li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: small;
+}
+
+
+    /* 言語切替リンクの位置調整 */
+    .language-switcher1 a,
+    .language-switcher2 a {
+      font-size: 14px;
+      top: 95%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* 詳細ボックスを縦並び */
+    .details {
+      width: 50%;
+      gap: 15px;
+    }
+
+    /* スキーリストのグリッド調整 */
+    .ski-list {
+      grid-template-columns: 1fr;
+    }
+
+    /* 地図とアクセスを縦並び */
+    .map_and_access {
+      flex-direction: row;
+    }
+
+    /* コンテナの余白調整 */
+    .container {
+      padding: 0 10px;
+    }
+
+    h1,
+    h2,
+    h4,
+    h5 {
+      font-size: 1.2em;
+    }
+
+    .news-section {
+      margin: 20px;
+      padding: 15px;
+    }
+
+    .ski-list {
+      grid-template-columns: 1fr;
+      /* 1列表示 */
+    }
+
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .item img {
+      width: 200px;
+    }
+  }
