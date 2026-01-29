@@ -218,41 +218,6 @@
         </div>
     </section>
 
-
-    <div class="chart-container" style="position: relative; width: 50vw; height: 50vh;">
-        <canvas id="myChart"></canvas>
-        <canvas id="myPieChart"></canvas>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
-        <script>
-            var ctx = document.getElementById("myPieChart");
-            var myPieChart = new Chart(ctx, {
-                type: 'doughnut',
-                data: {
-                    labels: ["Ski", "Snowboard"],
-                    datasets: [{
-                        backgroundColor: [
-                            "#BB5179",
-                            "#FAFF67",
-                            "#58A27C",
-                            "#3C00FF"
-                        ],
-                        data: [40, 60, 0, 0]
-                    }]
-                },
-                options: {
-                    cutout: "50%",
-                    responsive: true,
-                    title: {
-                        display: true,
-                        text: 'Ratio of ski/snowboard'
-                    }
-                }
-            });
-        </script>
-    </div>
-
-
-
     <div class="container">
         <section>
             <div>
